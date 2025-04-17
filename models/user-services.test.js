@@ -52,11 +52,11 @@ test("Fetching users by name", async () => {
   const result = [
     {
       name: "Ted Lasso",
-      job: "Football coach",
+      job: "Football Coach",
     },
     {
       name: "Ted Lasso",
-      job: "Soccer coach",
+      job: "Soccer Coach",
     }    
   ];
   //Mocking up the mongoose find() call with a certain value to be
