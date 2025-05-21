@@ -46,7 +46,7 @@ beforeEach(async () => {});
 afterEach(async () => {});
 
 test("Check that app is running", async () => {
-  const result = await supertest(appModule.app).get("/").expect(200);
+  const result = await (appModule.app).get("/").expect(200);
   console.log("App Check", result.body);
   expect(result.body).toBe("Hello World!");
 });

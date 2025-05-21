@@ -5,7 +5,7 @@
   "main": "backend_with_db.js",
   "scripts": {
     "test": "jest",
-    "cuc-test": "CUCUMBER_PUBLISH_TOKEN=cba52ac1-3a73-4ba8-8554-9f5bf38b7e3d ./node_modules/.bin/cucumber-js --publish",
+    "cuc-test": "cross-env CUCUMBER_PUBLISH_TOKEN=cba52ac1-3a73-4ba8-8554-9f5bf38b7e3d ./node_modules/.bin/cucumber-js --publish",
     "dev": "nodemon server.js",
     "start": "node server.js"
   },
@@ -13,6 +13,7 @@
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
+    "cross-env": "^7.0.3",
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
     "jest": "^27.5.1",
